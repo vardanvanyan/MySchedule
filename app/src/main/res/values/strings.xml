@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Schedule</string>
+    <string name="title_activity_category">CategoryActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="dialog_fr_ed_text_hint">Category name</string>
+    <string name="dialog_fr_btn_save">save</string>
+    <string name="dialog_fr_close_btn">close</string>
+    <string name="category_view_item_text_name">Name</string>
+    <string name="choose_priority">choose priority</string>
+    <string name="task_dialog_ed_text_hint">Name</string>
+    <string name="task_dialog_ed_text_desc">Description</string>
+    <string name="task_dialog_btn_save">save</string>
+    <string name="task_dialog_btn_close">close</string>
+    <string name="task_item_view_name">Name</string>
+    <string name="desc">Desc</string>
+    <string name="time">18:36</string>
+    <string name="date">28/06/2019</string>
+</resources>

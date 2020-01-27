@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/launch_activity_background"
+    tools:context=".Activities.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/top_img"
+        android:layout_width="@dimen/img_btn_width"
+        android:layout_height="@dimen/img_btn_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icons"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

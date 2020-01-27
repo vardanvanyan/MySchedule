@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="silver">#EAECEC</color>
+    <color name="color_card">#85FFFFF0</color>
+    <color name="color_delete">#DCFD0202</color>
+    <color name="launch_activity_background">#1968685D</color>
+    <color name="dialog_fr_background">#16947950</color>
+    <color name="category_view_item_text_color">#FF2702</color>
+    <color name="task_dialog_background_color">#16947950</color>
+    <color name="task_dialog_text_color">#9A0E0E0F</color>
+    <color name="task_item_view_name_color">#95FF0000</color>
+</resources>

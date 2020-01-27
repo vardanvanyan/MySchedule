@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_fr_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/category_name"
+        android:layout_width="@dimen/dialog_fr_ed_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_fr_ed_text_marginTop"
+        android:hint="@string/dialog_fr_ed_text_hint"
+        android:inputType="text"
+        android:fontFamily="@font/courgette"/>
+
+
+    <ImageView
+        android:id="@+id/color_img"
+        android:layout_width="@dimen/dialog_fr_img_view_width"
+        android:layout_height="@dimen/dialog_fr_img_view_height"
+        android:src="@drawable/color"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_fr_view_height" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_card">
+
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dialog_fr_save_btn_marginStart"
+            android:layout_marginTop="@dimen/dialog_fr_save_btn_marginTop"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tillana_medium"
+            android:text="@string/dialog_fr_btn_save" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_fr_btn_marginTop"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tillana_medium"
+            android:text="@string/dialog_fr_close_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/task_item_view_height"
+    android:layout_marginStart="@dimen/task_item_view_start"
+    android:layout_marginTop="@dimen/task_item_view_top"
+    android:layout_marginEnd="@dimen/task_item_view_end"
+    app:cardCornerRadius="@dimen/task_item_view_radius"
+    app:cardElevation="@dimen/task_item_view_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/task_item_view_rel_lay_height">
+
+        <Button
+            android:id="@+id/color_btn"
+            android:layout_width="@dimen/task_item_view_btn_width"
+            android:layout_height="@dimen/task_item_view_btn_height" />
+
+
+        <ImageView
+            android:id="@+id/task_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/task_item_view_img_start"
+            android:layout_marginTop="@dimen/task_item_view_img_top"
+            android:src="@drawable/salah"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/task_item_view_name_start"
+            android:layout_marginTop="@dimen/task_item_view_name_top"
+            android:fontFamily="@font/courgette"
+            android:text="@string/task_item_view_name"
+            android:textColor="@color/task_item_view_name_color"
+            android:textSize="@dimen/task_item_view_name_size" />
+
+        <TextView
+            android:id="@+id/task_desc"
+            android:layout_width="@dimen/task_item_view_desc_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_name"
+            android:layout_marginStart="@dimen/task_item_view_desc_start"
+            android:fontFamily="@font/caudex_italic"
+            android:text="@string/desc"
+            android:textSize="@dimen/task_item_view_desc_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/task_item_view_time_top"
+            android:layout_marginEnd="@dimen/task_item_view_time_end"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/task_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/task_item_view_date_top"
+            android:layout_marginEnd="@dimen/task_item_view_date_end"
+            android:text="@string/date" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

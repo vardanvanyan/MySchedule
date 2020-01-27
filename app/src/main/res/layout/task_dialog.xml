@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/task_dialog_background_color"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/task_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/salah"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/task_dialog_start"
+            android:text="@string/choose_priority"
+            android:textColor="@color/task_dialog_text_color"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/task_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/task_priority_btn_color">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/task_priority_btn_color"
+            android:layout_width="@dimen/task_dialog_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tillana_medium"
+        android:hint="@string/task_dialog_ed_text_hint" />
+
+
+    <EditText
+        android:id="@+id/task_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tillana_medium"
+        android:hint="@string/task_dialog_ed_text_desc" />
+
+
+    <DatePicker
+        android:id="@+id/task_date"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/task_dialog_date_height"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner">
+
+    </DatePicker>
+
+    <TimePicker
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/task_dialog_time_height"
+        android:layout_gravity="center_horizontal"
+        android:timePickerMode="spinner">
+
+    </TimePicker>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/task_dialog_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/task_dialog_save_btn_start"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tillana_medium"
+            android:text="@string/task_dialog_btn_save" />
+
+        <Button
+            android:id="@+id/task_dialog_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tillana_medium"
+            android:text="@string/task_dialog_btn_close" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
